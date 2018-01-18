@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>151Game</title>
+<script src="data.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="styleSheet.css" />
+</head>
+
+<div class="tab">
+  <button class="tablinks" onclick="loadPage(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="loadPage(event, 'About')">About</button>
+  <button class="tablinks" onclick="loadPage(event, 'Setup')">Setup/Start Game</button>
+
+</div>
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p></p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p></p>
+</div>
+
+<div id="Setup" class="tabcontent">
+  <div id="optionsBox">
+    <h3>A man lies unconscious in a dark room. What is his name?</h3>
+    <input type="text" id="nameBox"/><br /><br/>
+
+    <button id="startButton" onclick="loadPage(event,'Game')">Start Game</button>
+    <h4>*Headphones are recommended*</h4>
+</div>
+</div>
+
+<div id="Game" class="tabcontent">
+  <body onLoad="OnLoad()">
+    <div id="container">
+      <div id="roomTitle"></div>
+      <div id="roomImage"></div>
+      <div id="invScreen"></div>
+      <div id="paperScreen"></div>
+      <div id="roomText"></div>
+      <div id="roomChoices"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--<body onLoad="OnLoad()">
+  <div id="header">Options Bar</div>
+  <div id="container">
+    <div id="roomTitle">Room Title</div>
+    <div id="roomImage">Room Image</div>
+    <div id="invScreen">Inv Screen</div>
+    <div id="paperScreen">Paper Screen</div>
+    <div id="roomText">Room Text</div>
+    <div id="roomChoices">Room Choice buttons</div>
+  </div>
+<h3 id="roomTitle">Room title</h3>
+<p id="roomText">Room text</p>
+
+<div id="roomChoices">Room choice buttons</div>
+-->
+
+
+</body>
+</html>
