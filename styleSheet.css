@@ -30,6 +30,16 @@
     border-top: none;
 }
 
+#Home{
+  background-color: #f1f1f1;
+}
+
+#Setup{
+  background-color: #f1f1f1;
+}
+
+
+
 #optionsBox{
     margin: 0 auto;
     text-align: center;
@@ -71,7 +81,7 @@ h3{
     background-size: 100%
 }
 body{
-  background-image: url("images/static.png");  
+  background-image: url("images/static.png");
   background-size: 100%;
   background-color: LightGrey;
 
