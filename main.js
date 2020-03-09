@@ -388,6 +388,17 @@ function RoomCheck(roomIndex)
 
 }
 
+function startGame()
+{
+	var inputName = document.getElementById("nameBox").value;
+	if (inputName == "") {
+
+	}
+	else {
+		loadPage(event, 'Game');
+	}
+}
+
 function loadPage(evt, pageName) {
 		SelectRoom(0);
 

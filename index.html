@@ -2,34 +2,28 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Detention</title>
+<title>See Me After School</title>
 <script src="data.js"></script>
 <script src="main.js"></script>
 <link rel="stylesheet" href="styleSheet.css" />
 </head>
 
-<div class="tab">
-  <button class="tablinks" onclick="loadPage(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="loadPage(event, 'Setup')">Setup/Start Game</button>
-
-</div>
-
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
-  <h3>Home</h3>
+  <h3 id="GameTitle">"See Me After School"</h3>
   <p>Waking up in a run-down classroom, you find yourself in an abandoned school, with the entrance locked and the windows boarded up. Can you discover the secret and escape?</p>
   <br/>
-  <p>Detention is a narrative branching game about attempting to escape a seemingly empty school, with multiple endings and items to collect. Navigate to the setup screen to start the game.</p>
-</div>
+  <p>"See Me After School" is a narrative branching game about attempting to escape a seemingly empty school, with multiple endings and items to collect.</p>
 
-<div id="Setup" class="tabcontent">
   <div id="optionsBox">
-    <h3>A man lies unconscious in a dark room. What is his name?</h3>
+    <h3>Please enter your name</h3>
     <input type="text" id="nameBox"/><br /><br/>
 
-    <button id="startButton" onclick="loadPage(event,'Game')">Start Game</button>
+    <button id="startButton" onclick="startGame()">Start Game</button>
     <h4>*Headphones are recommended*</h4>
 </div>
+</div>
+
 </div>
 
 <div id="Game" class="tabcontent">
